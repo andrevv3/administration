@@ -1,0 +1,33 @@
+.gitignore (в корне репозитория, прописываем исключения folder/* *.jar)
+git help config
+git config --global user.name "Name"
+git config --global user.email email
+git config --global core.autocrlf input
+git config --global core.safecrlf warm
+git config --global core.quotepath off
+git init - создание нового репозитория
+git config user.name 'Name'
+git config user.email email
+git add <file> - проиндексировать изменения
+git add --all vs git add -A
+git reset <file> - снять индексацию изменений
+git commit -m "First Commit"
+git commit -a -m 'commit #2' (-a автоматическое "add" для всех известных файлов, перечисленных в индексе)
+git status
+git checkout 09bd8cc1 hello.txt - отменить изменения (откатиться к предыдущему файлу)
+git log
+git branch - вывести ветки
+git branch name - создать ветку
+git checkout name - переключиться на ветку name
+git checkout -b name - создать и переключиться на новую ветку
+git merge - слияние
+git branch -d name - удалить ветку
+git revert b10cc123 - исправить commit
+git show b10cc123, git show master - вывести изменения в коммите, ветке
+git diff 09ff57..6268 - сравнение
+git remote (-v)
+git remote add <shortname> <url>:
+git clone https://github.com/schacon/ticgit
+git pull <remote-name> <branch-name> - получить изменения и слить с текущей веткой (объединяет git fetch & git merge)
+git push <remote-name> <branch-name>
+git remote show
