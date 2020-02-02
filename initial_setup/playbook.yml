@@ -1,0 +1,20 @@
+---
+ - hosts: localhost
+   become: yes
+   tasks:
+    - name: installation of basic packages 
+      dnf:
+       name: 
+       - vim
+       - git
+       - glances
+       - audacious
+       state: present
+    
+    - name: install ranger
+      dnf:
+       name:
+       - ranger
+       - w3m
+       - w3m-img
+       state: present
